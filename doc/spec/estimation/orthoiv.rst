@@ -48,8 +48,8 @@ For instance call:
     import numpy as np
     X = np.random.normal(size=(100, 3))
     y = np.random.normal(size=(100,))
-    T = np.random.binomial(1, 0.5, size=(n,))
-    Z = np.random.binomial(1, 0.5, size=(n,))
+    T = np.random.binomial(1, 0.5, size=(100,))
+    Z = np.random.binomial(1, 0.5, size=(100,))
     W = np.random.normal(size=(100, 10))
 
 .. testcode::
