@@ -7,7 +7,7 @@ Orthogonal instrumental variables
 
 What is it?
 ==================================
-Orthogonal instrumental variables is a class of methods to estimate heterogeneous treatment effects with arbitrary machine
+Orthogonal instrumental variables is a suite of methods to estimate heterogeneous treatment effects with arbitrary machine
 learning methods in the presence of unobserved confounders with the aid of a valid instrument. We develop a statistical learning
 approach to the estimation of heterogeneous effects, reducing the problem to the minimization of an appropriate loss function that
 depends on a set of auxiliary models (each corresponding to a separate prediction task). The reduction enables the use of all
@@ -22,10 +22,10 @@ For a more detailed overview of these methods, see e.g. [Syrgkanis2019]_.
 What are the relevant estimator classes?
 ========================================
 
-This section describes the methodology implemented in the classes, :class:`.OrthoIV`,
+This section describes the methodology implemented in the classes :class:`.OrthoIV`,
 :class:`.DMLIV`, :class:`.NonParamDMLIV`, :class:`.LinearDRIV`, :class:`.SparseLinearDRIV`, :class:`.ForestDRIV`,
 :class:`.IntentToTreatDRIV`, :class:`.LinearIntentToTreatDRIV`.
-Click on each of these links for a detailed module documentation and input parameters of each class.
+Click on each of these links for detailed module documentation and input parameters of each class.
 
 When should you use it?
 ==================================
@@ -34,7 +34,7 @@ Suppose you have observational (or experimental from an A/B test) historical dat
 potentially gone into the choice of :math:`T`, and simultaneously could have had a direct effect on the outcome :math:`Y`
 (aka controls or confounders) are recorded in the dataset. At the same time if you could observe a variable :math:`Z` which
 will have a direct effect on treatment and an indirect effect on outcome which only goes through the treatment, we could use classes
-mentioned above to learn the heterogeneous treatment effect on high dimensional dataset. In other word, we learn the effect of the
+mentioned above to learn the heterogeneous treatment effect on high dimensional dataset. In other words, we learn the effect of the
 treatment on the outcome as a function of a set of observable characteristics :math:`X`.
 
 In particular, these methods are especially useful in A/B tests with an intent-to-treat structure, where the experimenter randomizes over
