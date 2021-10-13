@@ -489,6 +489,7 @@ def _process_feature(name, feat_ind, verbose, categorical_inds, categories, hete
 
         return insights, result
     except Exception as e:
+        warnings.warn(f"Exception caught when training model for feature {name}: {e}")
         return e
 
 
